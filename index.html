@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        section{
+            width: 100%;
+            height: auto;
+        }
+        .inner-section{
+            width: 100%;
+        }
+        .section2{
+            background-image: url(./images/3-in\ 1.jpg); 
+            width: 100%;
+            justify-content: space-around;
+            height: auto;
+           
+            padding: 80px 30px;
+        }
+        .section2-inner{
+            justify-content: space-around;
+        }
+         .sec2-div{
+            width: 25%;
+         }
+         .sec2-h{
+            padding: 30px 0px;
+         }
+         .sec2-p{
+            padding: 12px;
+            padding-left: 0px;
+         }
+        .section22{
+            width: 100%;
+            height: auto;
+            padding: 50px 30px;
+            background-color: white;
+        }.section3{
+            width: 100%;
+            background-image: url(./images/team-back-3.jpg);
+            height: auto;
+           padding: 80px 30px;
+           
+            justify-content: space-around;
+            text-align: center;
+        }
+        .card{
+            border: 0px;
+            width: 30%;
+        }
+        .section4{
+            width: 100%;
+            height: auto;
+            padding: 60px 30px;
+            background-color: black;
+            
+        }
+        .section5{
+            width: 100%;
+            height: auto;
+            background-image: url(./images/book-now-3.jpg);
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: right;
+            
+        }
+        .right-will{
+            background-color: #6666;
+            padding: 12px;
+        }
+        .oat{
+            padding: 20px 10px;
+        }
+        .section5-mini{
+            padding: 80px 30px;
+            width: 50%;
+        }
+        .time{
+            font-weight: 600;
+            font-size: 18px;
+        }
+        .pill{
+            align-items: center;
+        }
+        .lines{
+            width: 100%;
+            height: 1px;
+            background-color: #ffff;
+        }
+        .book-element{
+            padding: 20px 0px;
+        }
+        .will{
+            padding: 10px;
+        }
+        .book-element{
+            padding: 20px 0px;
+        }
+        .section6{
+            width: 100%;
+            height: auto;
+            background-image: url(./images/latest-article-back-3.jpg);
+            background-repeat: no-repeat;
+            padding: 80px 30px;
+            padding-bottom: 100px;
+           background-size: cover;
+            
+        }
+        .section7{
+            width: 100%;
+            height: auto;
+            background-image: url(./images/promo-banner-back-3.jpg);
+            background-attachment: local;
+            
+            
+            
+        }
+        footer{
+            background-color: black;
+            width: 100%;
+            
+            padding: 50px;
+        }
+        .inner-footer{
+            justify-content: space-between;
+        }
+        .form-control{
+            border-radius: 0px;
+        }
+        .btn{
+            border-radius: 0px;
+        }
+        .mini-div1{
+            width: 30%;
+            background-color: transparent;
+            padding: 10px;
+        }
+        .mini-div2{
+            width: 30%;
+            height: 80vh;
+            background-color: aliceblue;
+        }
+        .mini-div3{
+            height: 80vh;
+            width: 30%;
+            background-color: aliceblue;
+        }
+        .section5-mini{
+            position: relative;
+            right: 0px;
+            padding: 30px;
+            margin-left: auto;
+        }
+        .right{
+            border: 1px;
+            background-color: gray;
+        }
+        .line{
+            background-color: gray;
+            width: 100%;
+            height: 1px;
+
+        }
+        .cat{
+            align-items: center;
+            width: 80%;
+            padding-right: 30px;
+        }
+        .bbg{
+            padding-right: 10px;
+        }
+        .egg{
+            padding: 20px 0px;
+        }
+        .bonk{
+            color: #F0B88D;
+            padding: 20px 0px;
+        }
+        .pink{
+            padding: 20px 0px;
+        }
+        .price{
+            color: gray;
+            font-size: 18px;
+        }
+        .book-element{
+            display: flex;
+        }
+       .section8{
+        width: 100%;
+        height: auto;
+        background-image: url(./images/promo-bawah-back-3\ \(1\).jpg);
+         }  
+          
+        .section7{
+            background-color: black;
+            height: 40vh;
+            width: 100%;
+            display: none;
+            grid-template-columns: repeat(3,1fr);
+        }
+        .element{
+            width: 35%;
+            padding: 15px;
+        }
+        #img{
+            width: 250px;
+            height: auto;
+        }
+        .mini-footer2{
+            margin: 10px 0px;
+           
+        }
+        .m-3{
+            list-style-type: none;
+        }
+        .nav-icons{
+            width: 20px;
+            height: 20px;
+        }
+        .img{
+            margin-bottom: 20px;
+
+        }
+        .hjkj{
+            margin-bottom: 10px;
+        }
+        .bi{
+            margin: 10px;
+        }
+        .link{
+            color: #F0B88D;
+            font-size: 15px;
+        }
+        .bottle{
+            width: auto;
+            height: 60vh;
+            position: relative;
+            top: -140px;
+        }
+        .section3-header{
+            text-align: center;
+             width: 50%;
+        }.section33-header{
+            text-align: center;
+            padding: 40px 0px;
+            width: 50%;
+        }
+        .section33-content{
+            padding: 40px 0px;
+            align-items: center;
+            
+            justify-content: space-around;
+        }
+        .section8-content{
+            padding: 50px 20px;
+            font-size: 50px;
+            text-align: left;
+            width: 50%;
+        }
+        .mega-icon{
+            width: 60px;
+            height: 60px;
+          
+        }
+        .ice{
+            background-image: url(./images/3.jpg);
+            width: 100%;
+            height: 100vh;
+            background-size: cover;
+        }.ice1{
+            background-image: url(./images/1.jpg);
+            width: 100%;
+            height: 100vh;
+            background-size: cover;
+        }.ice2{
+            background-image: url(./images/2.jpg);
+            width: 100%;
+            height: 100vh;
+            background-size: cover;
+        }
+        .carousel-div{
+            width: 50%;
+            padding: 15px;
+            
+            display: flex;
+            color: #fff;
+        }
+        .right-carousel{
+            padding: 10px;
+        }
+        .left-carousel{
+            padding: 10px;
+        }
+        .carousel-item{
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+        
+        @media screen and (max-width:992px){
+            .sec2-div{
+            width: 100%;
+            padding: 30px 0px;
+           }
+           .section5{
+            justify-content: center;
+           }
+           .section5-mini{
+            width: 70%;
+           }
+        }
+        @media screen and (max-width:768px){
+            .element{
+                width: 100%;
+            }
+           .card{
+            width: 100%;
+           }
+           .mini-div1{
+            width: 100%;
+            text-align: center;
+            padding: 40px 10px;
+           }
+           .dd{
+            margin: 30px 0px;
+           }
+           .section5-mini{
+            width: 100%;
+           }
+           .section3-header{
+            width: 100%;
+           } 
+           .section33-header{
+            width: 100%;
+            
+           }
+
+           .mini-div1{
+            margin: 0px;
+           }
+           .section8-content{
+            width: 100%;
+           }
+
+        }
+        @media screen and (max-width:576px){
+         .bottle{
+            width: 100%;
+            height: auto;
+         }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <nav class="navbar navbar-expand-lg py-3">
+            <div class="container">
+                <a href="#" class="navbar-brand"><img src="./images/default-logo.png" alt=""></a>
+                   <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span></button>
+
+
+                <div class="collapse navbar-collapse" id="navmenu">
+                    <ul class="navbar-nav ms-auto nav-underline">
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+                            href="index.html" role="button" aria-expanded="false">Home</a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                              <li><a class="dropdown-item" href="#">Separated link</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="blog.html" class="nav-link">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pages.html" class="nav-link">Pages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="element.html" class="nav-link">Element</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+                            href="portfolio.html" role="button" aria-expanded="false">Portfolio</a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                              <li><a class="dropdown-item" href="#">Separated link</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="collapse navbar-collapse" >
+                    <ul class="navbar-nav ms-auto d-flex">
+                        <li class="nav-item">
+                            <a href="#learn" class="nav-link"><img src="./images/icons8-paste-48.png" alt="" class="nav-icons"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#questions" class="nav-link"><img src="./images/icons8-search-32.png" alt="" class="nav-icons"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#instructors" class="nav-link"><img src="./images/icons8-menu-24.png" alt="" class="nav-icons"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+        <div class="inner-section">
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item ice active">
+                    <div class="carousel-div">
+                        <div class="left-carousel">
+                            <img src="./images/curly-border.png" alt="">
+                        </div>
+                        <div class="right-carousel">
+                            <h1 class="display3">The Hair<br>Creators Home</h1>
+                            <div class="par">Cutting curly hair is different from cutting straight hair. Some hair stylists may not know how to cut curly hair and leave you with an uneven look. </div>
+                        </div>
+                    </div>
+                
+  
+                  </div>
+                  <div class="carousel-item ice1 ">
+                    <div class="carousel-div">
+                        <div class="left-carousel">
+                            <img src="./images/curly-border.png" alt="">
+                        </div>
+                        <div class="right-carousel">
+                            <h1 class="display3">The Hair<br>Creators Home</h1>
+                            <div class="par">Cutting curly hair is different from cutting straight hair. Some hair stylists may not know how to cut curly hair and leave you with an uneven look. </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item ice2">
+                    <div class="carousel-div">
+                        <div class="left-carousel">
+                            <img src="./images/curly-border.png" alt="">
+                        </div>
+                        <div class="right-carousel">
+                            <h1 class="display3">The Hair<br>Creators Home</h1>
+                            <div class="par">Cutting curly hair is different from cutting straight hair. Some hair stylists may not know how to cut curly hair and leave you with an uneven look. </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+    </section>
+    <section class="section2">
+        <div class="section2-inner d-block d-lg-flex">
+           
+           
+                <div class=" sec2-div text-light bg-transparent p-30 text-align-left">
+                    <h1>Promo</h1>
+                    <div class="sec2-h">Exclusive on Kitring</div>
+                    <div class="sec2-p">Love your hair all month long! Blowouts February only. Schedule a wash and blowout with our select stylists for just $59 during the month of February!
+                         Call to reserve your appointments today! Valentines Day will fill up fast!</div>
+                         <div class=" h5 bonk">$59.00</div>
+                <div class="link">More</div>
+                </div>
+            <div class=" sec2-div text-light bg-transparent text-align-left">
+                <h1>Working Hours</h1>
+                <div class="d-bolock">
+                    <div class="d-flex justify-content-between pink">
+                        <div class="px-10">Weekdays</div>
+                        <div class="ape">9AM-9PM</div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="d-flex justify-content-between pink">
+                        <div class="px-10">Saturday</div>
+                        <div class="ape">10AM-8PM</div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="d-flex justify-content-between pink">
+                        <div class="px-10">Sunday</div>
+                        <div class="link">Closed</div>
+                    </div>
+                    <div class="sec2-h">
+                        30 min Call-Ahead & Same day reservation!
+                    </div>
+                    <div class="link">Book Now</div>
+                </div>
+               
+            </div>
+            <div class="card sec2-div text-light bg-transparent text-align-left">
+                <h1>Prices</h1>
+                <div class="d-bolock">
+                    <div class="d-block egg">
+                        <div class="left d-flex justify-content-between bag">
+                            <div class="d-flex w-80  cat">
+                                <div class="bbg">Cutting</div>
+                                <div class="line"></div>
+                            </div>
+                            <div class="link">125$</div>
+                        </div>
+                        <div class="price">Clean & simple 30-40 minutes</div>
+                    </div> <div class="d-block egg">
+                        <div class="left d-flex justify-content-between bag">
+                            <div class="d-flex w-80  cat">
+                                <div class="bbg">Colouring</div>
+                                <div class="line"></div>
+                            </div>
+                            <div class="link">265$</div>
+                        </div>
+                        <div class="price">Natural look hair colouring</div>
+                    </div> <div class="d-block egg">
+                        <div class="left d-flex justify-content-between bag">
+                            <div class="d-flex w-80  cat">
+                                <div class="bbg">Styling</div>
+                                <div class="line"></div>
+                            </div>
+                            <div class="link">275$</div>
+                        </div>
+                        <div class="price">Curls and wave</div>
+                    </div>
+                    <div class=""></div>
+                    <div class=""></div>
+                </div>
+                <div class="sec2-h">30 min Call-Ahead & Same day reservation!</div>
+                <div class="link">More</div>
+            </div>
+        </div>
+       
+
+
+    </section>
+    <section class="section22  d-md-flex py-8  md-align-center justify-content-center">
+        <div class="d-md-flex justify-content-around  px-30 py-50">
+            <div class="mini-div1 card align-items-center p-10">
+                <img src="./images/icons8-scissors-44.png" alt="" class="mega-icon">
+                <h1 class="">Cutting</h1>
+                <div class="dd">We believe in support and generosity for your hair. Refresh your look 
+                    with a top rated hair stylist. Kitring given a completely unique service</div>
+                    <div class="link">Read More</div>
+            </div>
+            <div class="mini-div1 card align-items-center p-10">
+                <img src="./images/icons8-bottles-66.png" alt="" class="mega-icon">
+                <h1 class="r">Corloring</h1>
+                <div class="dd">We believe in healthy, creative colour from Kitring. From low maintenance, lived in looks, to beautiful and dramatic colours.</div>
+                    <div class="link">Read More</div>
+            </div>
+             <div class="mini-div1 card align-items-center p-10">
+                <img src="./images/icons8-and-64.png" alt="" class="mega-icon">
+                <h1 class="">Styling</h1>
+                <div class="dd">It’s all about a beautiful blow out and consultation about your hair care. Your hair’s integrity is one of our top priorities!</div>
+                    <div class="link">Read More</div>
+            </div>
+            
+        </div>
+       
+    </section>
+
+    <section class="section3 d-block  m-8 ml-50 justify-content-center">
+        <div class="section3-header w-md-50 d-grid m-auto mb-30">
+            <h2>Our Stylist</h2>
+            <div class="dd">
+                Our team brings the most amazing gifts to our salon community. From not only cutting, colouring and styling your hair. But even more specifically to
+                 colour techniques like balayage and teasy lights, blonding and grey blending.
+            </div>
+            <div class="link">Meet The Team</div>
+        </div>
+        <div class="d-md-flex justify-content-center px-30 py-10">
+        <div class="mini-div1 card m-2">
+            <img src="./images/team-normal-05-3.png" alt="" class="h-auto w-90">
+            <div class="card-header">JACK KIRBY</div>
+            <div class="">Hairdresser</div>
+        </div>
+        <div class="mini-div1 card m-2">
+            <img src="./images/team-normal-04-3.png" alt="" class="h-auto w-90">
+            <div class="card-header">JACK KIRBY</div>
+            <div class="">Hairdresser</div>
+        </div>
+        <div class="mini-div1 card m-2">
+            <img src="./images/team-normal-03-3.png" alt="" class="h-auto w-90">
+            <div class="card-header">JACK KIRBY</div>
+            <div class="">Hairdresser</div>
+        </div>
+        </div>
+    </section>
+
+    <section class="section4 justify-content-between">
+        <img src="./images/logo-01-3.png" class="img-fluid ml-auto" id="img" alt="">
+        <img src="./images/logo-02-3.png" class="img-fluid ml-auto" id="img" alt="">
+        <img src="./images/logo-03-3.png" class="img-fluid ml-auto" id="img" alt="">
+        <img src="./images/logo-04-3.png" class="img-fluid ml-auto" id="img"alt="">
+        <img src="./images/logo-05-3.png" class="img-fluid ml-auto" id="img" alt="">
+    </section>
+    
+    <section class="section5">
+        <div class="section5-mini text-light">
+            <h2>Book Now</h2>
+            <div class="section5-mini-div">
+                <div class="book-element">
+                    <div class="">Available Appointments on November 14, 2024</div>
+                    <div class="right"></div>
+                 </div>
+                 <div class="oat">
+                    <div class="lines"></div>
+                    <div class="book-element d-flex justify-content-between">
+                       <div class="d-block">
+                       <div class="pill d-flex ">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-clock-fill" viewBox="0 0 16 16">
+                               <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"/>
+                             </svg>
+                             <div class="stress">
+                       <div class="time">  8:00 pm  9:00 pm</div>
+                   </div>
+               </div>
+                   </div>
+                       <div class="right-will">Book Appointment</div>
+                    </div><div class="lines"></div>
+                    <div class="book-element d-flex justify-content-between">
+                       <div class="d-block">
+                       <div class="pill d-flex ">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-clock-fill" viewBox="0 0 16 16">
+                               <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"/>
+                             </svg>
+                             <div class="stress">
+                       <div class="time">  8:00 pm  9:00 pm</div>
+                   </div>
+               </div>
+                   </div>
+                       <div class="right-will">Book Appointment</div>
+                    </div><div class="lines"></div>
+                    <div class="book-element d-flex justify-content-between">
+                       <div class="d-block">
+                       <div class="pill d-flex ">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-clock-fill" viewBox="0 0 16 16">
+                               <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"/>
+                             </svg>
+                             <div class="stress">
+                       <div class="time">  8:00 pm  9:00 pm</div>
+                   </div>
+               </div>
+                   </div>
+                       <div class="right-will">Book Appointment</div>
+                    </div><div class="lines"></div>
+                    <div class="book-element d-flex justify-content-between">
+                       <div class="d-block">
+                       <div class="pill d-flex ">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-clock-fill" viewBox="0 0 16 16">
+                               <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"/>
+                             </svg>
+                             <div class="stress">
+                       <div class="time">  8:00 pm  9:00 pm</div>
+                   </div>
+               </div>
+                   </div>
+                       <div class="right-will">Book Appointment</div>
+                    </div>
+                 
+                </div>
+
+            </div>
+            <div class="">30 min Call-Ahead & Same day reservation!</div>
+            <div class="link">Book Now</div>
+        </div>
+    </section>
+
+    <section class="section6">
+        <div class="section33-header  w-md-50  m-auto mb-30">
+            <h2>Our Stylist</h2>
+            <div class="">
+                Our team brings the most amazing gifts to our salon community. From not only cutting, colouring and styling your hair. But even more specifically to
+                 colour techniques like balayage and teasy lights, blonding and grey blending.
+            </div>
+            <div class="link">Meet The Team</div>
+        </div>
+        <div class="section33-content justify-content-center d-md-flex">
+            <div class="mini-div1 p-10">
+                
+                <h1 class="">Cutting</h1>
+                <div class="">We believe in support and generosity for your hair. Refresh your look 
+                    with a top rated hair stylist. Kitring given a completely unique service</div>
+                    <div class="link">Read More</div>
+            </div>
+            <div class="mini-div1  p-10">
+                
+                <h1 class="r">Corloring</h1>
+                <div class="">We believe in healthy, creative colour from Kitring. From low maintenance, lived in looks, to beautiful and dramatic colours.</div>
+                    <div class="link">Read More</div>
+            </div>
+             <div class="mini-div1 p-10">
+               
+                <h1 class="">Styling</h1>
+                <div class="">It’s all about a beautiful blow out and consultation about your hair care. Your hair’s integrity is one of our top priorities!</div>
+                    <div class="link">Read More</div>
+            </div>
+            
+        </div>
+    </section>
+     <section class="section8">
+        <div class="d-md-flex justify-content-between">
+            <img src="./images/promo-bottle-1-3 (1).png" class="bottle w-40" alt="">
+            <div class="section8-content ">
+                <div class="text-white h1">Milk Rebonding with Cellophane, Haircut & More at Kitring</div>
+                <div class="link">Check Now</div>
+            </div>
+        </div>
+     </section>
+
+    <footer>
+        <div class="inner-footer d-md-flex space-between text-light">
+            <div class="element  ">
+                <img src="./images/light-default-logo.png" class="img img-mt-7" alt="">
+                <p class="hjkj">
+                    Kitring is designed specifically for a hairdresser, barber shop, beauty center, and hair salon to make your website beautiful instantly
+                </p>
+                <div class="d-flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffff" class="bi bi-facebook" viewBox="0 0 16 16">
+                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffff" class="bi bi-twitter" viewBox="0 0 16 16">
+                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffff" class="bi bi-instagram" viewBox="0 0 16 16">
+                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffff" class="bi bi-tiktok" viewBox="0 0 16 16">
+                        <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
+                      </svg>
+                </div>
+            </div>
+            <div class="element ">
+                <h4 class="img"> Newsletter</h4>
+                <form action="">
+                    <input type="email" class="form-control text-secondary bg-transparent" placeholder="Email Address" >
+                    <button class="btn bg-secondary" type="button" id="button">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="mini-footer2">
+        <p class="justify-content-left text-light">©2022 Kitring – Barber, Salon & MUA WordPress Theme</p>
+        <ul class="text-underline justify-content-end d-flex">
+            
+            <li class=" text-light m-3">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class=" text-light m-3">
+                <a class="nav-link" href="#">FAQ</a>
+              </li> 
+              <li class="text-light m-3">
+                <a class="nav-link" href="#">Privacy Policy</a>
+              </li>
+            
+          </ul>
+        </div>
+
+
+    </footer>
+    <section class="section7 ">
+        <img src="./images/10.jpg" alt="" class="image w-15 h-auto">
+        <img src="./images/11.jpg" alt="" class="image w-15 h-auto">
+        <img src="./images/12.jpg" alt="" class="image w-15 h-auto">
+        <img src="./images/13.jpg" alt="" class="image w-15 h-auto">
+        <img src="./images/14.jpg" alt="" class="image w-15 h-auto">
+       
+    </section>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
